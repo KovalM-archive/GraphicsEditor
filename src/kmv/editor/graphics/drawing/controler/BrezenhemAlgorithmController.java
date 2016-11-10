@@ -1,14 +1,14 @@
 package kmv.editor.graphics.drawing.controler;
 
 import kmv.editor.graphics.drawing.model.Segment;
-import kmv.editor.graphics.drawing.view.CoordinatePlane;
+import kmv.editor.graphics.view.WorkingAreaPanel;
 
 /**
  * @author Mikhail Kovalev
  */
 public class BrezenhemAlgorithmController extends AlgorithmController {
-    public BrezenhemAlgorithmController(CoordinatePlane pCoordinatePlane) {
-        super(pCoordinatePlane);
+    public BrezenhemAlgorithmController(WorkingAreaPanel pWorkingAreaPanel) {
+        super(pWorkingAreaPanel);
     }
 
     @Override
