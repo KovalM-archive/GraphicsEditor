@@ -2,6 +2,7 @@ package kmv.editor.graphics.drawing.view;
 
 import java.awt.BasicStroke;
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
@@ -19,6 +20,7 @@ public class CoordinatePlane extends JPanel implements CoordinatePlaneConstants{
 	private BufferedImage coordinateBuffer;
 
 	public CoordinatePlane(){
+        setMaximumSize(new Dimension(COORDINATE_PLANE_WIDTH, COORDINATE_PLANE_HEIGHT));
 		firstBuffer = new BufferedImage(COORDINATE_PLANE_WIDTH, COORDINATE_PLANE_HEIGHT, BufferedImage.TYPE_INT_ARGB);
 		secondBuffer = new BufferedImage(COORDINATE_PLANE_WIDTH, COORDINATE_PLANE_HEIGHT, BufferedImage.TYPE_INT_ARGB);
 		coordinateBuffer = new BufferedImage(COORDINATE_PLANE_WIDTH, COORDINATE_PLANE_HEIGHT, BufferedImage.TYPE_INT_ARGB);
@@ -117,20 +119,20 @@ public class CoordinatePlane extends JPanel implements CoordinatePlaneConstants{
 				COORDINATE_PLANE_WIDTH, COORDINATE_PLANE_HEIGHT/2);
 
 		for (int i = COORDINATE_PLANE_WIDTH/2; i < COORDINATE_PLANE_WIDTH; i+= COORDINATE_PLANE_STEP * COORDINATE_PLANE_CELL) {
-			painter.drawLine(i, COORDINATE_PLANE_HEIGHT/2- COORDINATE_PLANE_CELL /2,
-                    i, COORDINATE_PLANE_HEIGHT/2+ COORDINATE_PLANE_CELL /2);
+			painter.drawLine(i, COORDINATE_PLANE_HEIGHT/2- COORDINATE_PLANE_CELL /4,
+                    i, COORDINATE_PLANE_HEIGHT/2+ COORDINATE_PLANE_CELL /4);
         }
         for (int i = COORDINATE_PLANE_WIDTH/2; i >0; i-= COORDINATE_PLANE_STEP * COORDINATE_PLANE_CELL) {
-            painter.drawLine(i, COORDINATE_PLANE_HEIGHT/2- COORDINATE_PLANE_CELL /2,
-                    i, COORDINATE_PLANE_HEIGHT/2+ COORDINATE_PLANE_CELL /2);
+            painter.drawLine(i, COORDINATE_PLANE_HEIGHT/2- COORDINATE_PLANE_CELL /4,
+                    i, COORDINATE_PLANE_HEIGHT/2+ COORDINATE_PLANE_CELL /4);
         }
         for (int i = COORDINATE_PLANE_HEIGHT/2; i < COORDINATE_PLANE_HEIGHT; i+= COORDINATE_PLANE_STEP * COORDINATE_PLANE_CELL) {
-            painter.drawLine(COORDINATE_PLANE_WIDTH/2 - COORDINATE_PLANE_CELL /2, i,
-                    COORDINATE_PLANE_WIDTH/2+ COORDINATE_PLANE_CELL /2, i);
+            painter.drawLine(COORDINATE_PLANE_WIDTH/2 - COORDINATE_PLANE_CELL /4, i,
+                    COORDINATE_PLANE_WIDTH/2+ COORDINATE_PLANE_CELL /4, i);
         }
         for (int i = COORDINATE_PLANE_HEIGHT/2; i > 0; i-= COORDINATE_PLANE_STEP * COORDINATE_PLANE_CELL) {
-            painter.drawLine(COORDINATE_PLANE_WIDTH/2- COORDINATE_PLANE_CELL /2, i,
-                    COORDINATE_PLANE_WIDTH/2+ COORDINATE_PLANE_CELL /2, i);
+            painter.drawLine(COORDINATE_PLANE_WIDTH/2- COORDINATE_PLANE_CELL /4, i,
+                    COORDINATE_PLANE_WIDTH/2+ COORDINATE_PLANE_CELL /4, i);
         }
 
 		repaint();

@@ -6,20 +6,36 @@ import kmv.editor.graphics.view.WorkingAreaPanel;
 /**
  *  @author Mikhail Kovalev
  */
-public abstract class AlgorithmController {
-    private WorkingAreaPanel mWorkingAreaPanel;
+public abstract class AlgorithmController implements Runnable {
+	protected Thread mThread;
+	protected WorkingAreaPanel mWorkingAreaPanel;
+	protected Segment mSegment;
+	protected boolean mCheckoutMod;
 
-    public AlgorithmController(WorkingAreaPanel pWorkingAreaPanel){
-        mWorkingAreaPanel = pWorkingAreaPanel;
-    }
+	public AlgorithmController(WorkingAreaPanel pWorkingAreaPanel){
+		mWorkingAreaPanel = pWorkingAreaPanel;
+	}
 
-    public abstract void startBuildSegment(Segment pSegment, boolean isCheckoutMode);
+	public void startBuildSegment(Segment pSegment, boolean pCheckoutMode){
+		mSegment = pSegment;
+		mCheckoutMod = pCheckoutMode;
+        mThread = new Thread(this);
+		mThread.start();
+	}
 
-    public WorkingAreaPanel getWorkingAreaPanel() {
-        return mWorkingAreaPanel;
-    }
+	public abstract void buildSegmentByAlgorithm();
 
-    public void setWorkingAreaPanel(WorkingAreaPanel pWorkingAreaPanel) {
-        mWorkingAreaPanel = pWorkingAreaPanel;
-    }
+	@Override
+	public void run() {
+		clearLogPanel();
+		buildSegmentByAlgorithm();
+	}
+
+	public void logInfo(String pLogInfo){
+		mWorkingAreaPanel.getLogPanel().append(pLogInfo+"\n");
+	}
+
+	public void clearLogPanel(){
+		mWorkingAreaPanel.getLogPanel().setText(null);
+	}
 }
