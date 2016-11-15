@@ -1,13 +1,9 @@
 package kmv.editor.graphics.drawing.controler;
 
 import java.awt.Color;
-import kmv.editor.graphics.drawing.model.Segment;
 import kmv.editor.graphics.drawing.view.CoordinatePlane;
 import kmv.editor.graphics.view.WorkingAreaPanel;
 
-/**
- * @author Mikhail Kovalev
- */
 public class BYAlgorithmController extends AlgorithmController {
     public BYAlgorithmController(WorkingAreaPanel pWorkingAreaPanel) {
         super(pWorkingAreaPanel);
@@ -49,7 +45,7 @@ public class BYAlgorithmController extends AlgorithmController {
         coordinatePlane.drawPlot((int)xpxl2, (int)(ypxl2+1), new Color(0, 0, 0, (int)(255*(fpart(yend)*xgap))));
 
         x = xpxl1 + 1;
-        while (x < (xpxl2-1)){
+        while (x < (xpxl2)){
             coordinatePlane.drawPlot((int)x, (int)ipart(intery), new Color(0, 0, 0, (int)(255*(1 - fpart(intery)))));
             coordinatePlane.drawPlot((int)x, (int)ipart(intery), new Color(0, 0, 0, (int)(255*(fpart(intery)))));
             intery = intery + gradient;
@@ -58,7 +54,7 @@ public class BYAlgorithmController extends AlgorithmController {
     }
 
     private double ipart(double pValue){
-        return (double)((int)pValue);
+        return Math.round(pValue);
     }
 
     private double fpart(double pValue){
