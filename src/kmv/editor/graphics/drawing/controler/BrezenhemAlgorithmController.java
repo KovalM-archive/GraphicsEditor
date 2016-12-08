@@ -1,6 +1,7 @@
 package kmv.editor.graphics.drawing.controler;
 
 import java.awt.Color;
+import kmv.editor.graphics.drawing.model.GeometryObject;
 import kmv.editor.graphics.drawing.model.Segment;
 import kmv.editor.graphics.drawing.view.CoordinatePlane;
 import kmv.editor.graphics.view.WorkingAreaPanel;
@@ -14,14 +15,15 @@ public class BrezenhemAlgorithmController extends AlgorithmController {
 	}
 
 	@Override
-	public void buildSegmentByAlgorithm() {
+	public void buildGeometryObjectByAlgorithm() {
+		Segment segment = (Segment) mGeometryObject;
 		CoordinatePlane coordinatePlane = mWorkingAreaPanel.getCoordinatePlane();
 		coordinatePlane.clearCoordinatePlane();
 		int pause = mCheckoutMod?1000:0;
-		int x1 = (int)mSegment.getStartX();
-		int y1 = (int)mSegment.getStartY();
-		int x2 = (int)mSegment.getFinishX();
-		int y2 = (int)mSegment.getFinishY();
+		int x1 = (int)segment.getStartX();
+		int y1 = (int)segment.getStartY();
+		int x2 = (int)segment.getFinishX();
+		int y2 = (int)segment.getFinishY();
 		int x = x1;
 		int y = y1;
 		int dx = x2-x1;

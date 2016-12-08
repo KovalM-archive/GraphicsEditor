@@ -15,15 +15,16 @@ public class DDAAlgorithmController extends AlgorithmController {
     }
 
     @Override
-    public void buildSegmentByAlgorithm() {
+    public void buildGeometryObjectByAlgorithm() {
+        Segment segment = (Segment) mGeometryObject;
         CoordinatePlane coordinatePlane = mWorkingAreaPanel.getCoordinatePlane();
         coordinatePlane.clearCoordinatePlane();
         int pause = mCheckoutMod?1000:0;
 
-        double x1 = mSegment.getStartX();
-        double y1 = mSegment.getStartY();
-        double x2 = mSegment.getFinishX();
-        double y2 = mSegment.getFinishY();
+        double x1 = segment.getStartX();
+        double y1 = segment.getStartY();
+        double x2 = segment.getFinishX();
+        double y2 = segment.getFinishY();
         int length = (int)Math.max(Math.abs(x1-x2), Math.abs(y1-y2));
         double dx = (x2-x1) / length;
         double dy = (y2-y1) / length;

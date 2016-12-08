@@ -32,6 +32,13 @@ public class CoordinatePlane extends JPanel implements CoordinatePlaneConstants{
                 pSegment.getFinishX(), pSegment.getFinishY(), pColor);
     }
 
+    public void drawInAllQuarter(double x, double y, double centerX, double centerY){
+        drawPlot((int)x, (int)y, Color.black);
+        drawPlot((int)(centerX-Math.abs(centerX-x)), (int)y, Color.black);
+        drawPlot((int)x, (int)(centerY-Math.abs(centerY-y)), Color.black);
+        drawPlot((int)(centerX-Math.abs(centerX-x)), (int)(centerY-Math.abs(centerY-y)), Color.black);
+    }
+
     public void drawSegment(double startX, double startY, double finishX, double finishY, Color pColor){
         int x1 = getXOnPlane(startX);
         int y1 = getYOnPlane(startY);

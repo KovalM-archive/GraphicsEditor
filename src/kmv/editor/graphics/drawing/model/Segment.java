@@ -3,7 +3,7 @@ package kmv.editor.graphics.drawing.model;
 /**
  * @author Mikhail Kovalev
  */
-public class Segment {
+public class Segment implements GeometryObject{
     private double mStartX;
     private double mStartY;
     private double mFinishX;

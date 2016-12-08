@@ -1,4 +1,4 @@
-package kmv.editor.graphics.menu.segement;
+package kmv.editor.graphics.menu.geometry;
 
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
@@ -11,11 +11,11 @@ import kmv.editor.graphics.view.BuildSegmentPanel;
 /**
  * @author Mikhail Kovalev
  */
-public class CommonSegmentListener implements ActionListener {
+public class SegmentListener implements ActionListener {
     private JFrame mMainWindow;
     private AlgorithmController mAlgorithmController;
 
-    public CommonSegmentListener(JFrame pMainWindow, AlgorithmController pAlgorithmController){
+    public SegmentListener(JFrame pMainWindow, AlgorithmController pAlgorithmController){
         mMainWindow = pMainWindow;
         mAlgorithmController = pAlgorithmController;
     }

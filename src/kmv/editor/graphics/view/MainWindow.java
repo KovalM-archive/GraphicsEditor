@@ -1,7 +1,6 @@
 package kmv.editor.graphics.view;
 
 import java.awt.BorderLayout;
-import java.awt.Color;
 import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
@@ -15,9 +14,13 @@ import java.awt.event.KeyEvent;
 
 import kmv.editor.graphics.drawing.controler.BYAlgorithmController;
 import kmv.editor.graphics.drawing.controler.BrezenhemAlgorithmController;
+import kmv.editor.graphics.drawing.controler.CircleAlgorithmController;
 import kmv.editor.graphics.drawing.controler.DDAAlgorithmController;
+import kmv.editor.graphics.drawing.controler.EllipseAlgorithmController;
 import kmv.editor.graphics.menu.ExitMenuListener;
-import kmv.editor.graphics.menu.segement.CommonSegmentListener;
+import kmv.editor.graphics.menu.geometry.CircleBuildingListener;
+import kmv.editor.graphics.menu.geometry.EllipseBuildingListener;
+import kmv.editor.graphics.menu.geometry.SegmentListener;
 
 public class MainWindow implements ViewConstants {
 	public MainWindow() {
@@ -36,16 +39,18 @@ public class MainWindow implements ViewConstants {
 		JMenuBar mainMenuBar = new JMenuBar();
 		JMenu fileMenu = new JMenu(MENU_FILE);
 		fileMenu.setMnemonic(KeyEvent.VK_F);
-
 		JMenuItem exitItem = new JMenuItem(EXIT, KeyEvent.VK_Q);
 		exitItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_Q, InputEvent.CTRL_MASK));
-
 		fileMenu.add(exitItem);
 		mainMenuBar.add(fileMenu);
+		mainFrame.setJMenuBar(mainMenuBar);
+		exitItem.addActionListener(new ExitMenuListener());
+
+		WorkingAreaPanel workingAreaPanel = new WorkingAreaPanel();
+		mainFrame.add(workingAreaPanel, BorderLayout.CENTER);
 
 		JMenu segmentsMenu = new JMenu(MENU_SEGMENTS);
-		fileMenu.setMnemonic(KeyEvent.VK_E);
-
+		segmentsMenu.setMnemonic(KeyEvent.VK_E);
 		JMenuItem ddaAlgoritmItem = new JMenuItem(MENU_SEGMENT_DDA, KeyEvent.VK_R);
 		JMenuItem brenzenhemAlgoritmItem = new JMenuItem(MENU_SEGMENT_BRENZENHEM, KeyEvent.VK_A);
 		JMenuItem byAlgoritmItem = new JMenuItem(MENU_SEGMENT_BY, KeyEvent.VK_D);
@@ -54,23 +59,41 @@ public class MainWindow implements ViewConstants {
 		segmentsMenu.add(brenzenhemAlgoritmItem);
 		segmentsMenu.add(byAlgoritmItem);
 		mainMenuBar.add(segmentsMenu);
-		mainFrame.setJMenuBar(mainMenuBar);
-		exitItem.addActionListener(new ExitMenuListener());
 
-        WorkingAreaPanel workingAreaPanel = new WorkingAreaPanel();
-		mainFrame.add(workingAreaPanel, BorderLayout.CENTER);
-
-		ddaAlgoritmItem.addActionListener(new CommonSegmentListener(
+		ddaAlgoritmItem.addActionListener(new SegmentListener(
 				mainFrame,
 				new DDAAlgorithmController(workingAreaPanel))
 		);
-		byAlgoritmItem.addActionListener(new CommonSegmentListener(
+		byAlgoritmItem.addActionListener(new SegmentListener(
 				mainFrame,
 				new BYAlgorithmController(workingAreaPanel))
 		);
-		brenzenhemAlgoritmItem.addActionListener(new CommonSegmentListener(
+		brenzenhemAlgoritmItem.addActionListener(new SegmentListener(
 				mainFrame,
 				new BrezenhemAlgorithmController(workingAreaPanel))
+		);
+
+		JMenu secondOrderLinesMenu = new JMenu(MENU_TWO_ORDER_LINES);
+
+		JMenuItem circleBuildingItem = new JMenuItem(MENU_CIRCLE);
+		JMenuItem ellipseBuildingtem = new JMenuItem(MENU_ELLIPSE);
+		JMenuItem hyperboleBuildingtem = new JMenuItem(MENU_HYPERBOLE);
+		JMenuItem parabolaBuildingtem = new JMenuItem(MENU_PARABOLA);
+
+		secondOrderLinesMenu.add(circleBuildingItem);
+		secondOrderLinesMenu.add(ellipseBuildingtem);
+		secondOrderLinesMenu.add(hyperboleBuildingtem);
+		secondOrderLinesMenu.add(parabolaBuildingtem);
+		mainMenuBar.add(secondOrderLinesMenu);
+
+		circleBuildingItem.addActionListener(new CircleBuildingListener(
+				mainFrame,
+				new CircleAlgorithmController(workingAreaPanel))
+		);
+
+		ellipseBuildingtem.addActionListener(new EllipseBuildingListener(
+				mainFrame,
+				new EllipseAlgorithmController(workingAreaPanel))
 		);
 
 		mainFrame.setVisible(true);

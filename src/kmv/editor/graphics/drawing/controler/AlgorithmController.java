@@ -1,6 +1,6 @@
 package kmv.editor.graphics.drawing.controler;
 
-import kmv.editor.graphics.drawing.model.Segment;
+import kmv.editor.graphics.drawing.model.GeometryObject;
 import kmv.editor.graphics.view.WorkingAreaPanel;
 
 /**
@@ -9,26 +9,26 @@ import kmv.editor.graphics.view.WorkingAreaPanel;
 public abstract class AlgorithmController implements Runnable {
 	protected Thread mThread;
 	protected WorkingAreaPanel mWorkingAreaPanel;
-	protected Segment mSegment;
+	protected GeometryObject mGeometryObject;
 	protected boolean mCheckoutMod;
 
 	public AlgorithmController(WorkingAreaPanel pWorkingAreaPanel){
 		mWorkingAreaPanel = pWorkingAreaPanel;
 	}
 
-	public void startBuildSegment(Segment pSegment, boolean pCheckoutMode){
-		mSegment = pSegment;
+	public void startBuildSegment(GeometryObject pGeometryObject, boolean pCheckoutMode){
+		mGeometryObject = pGeometryObject;
 		mCheckoutMod = pCheckoutMode;
         mThread = new Thread(this);
 		mThread.start();
 	}
 
-	public abstract void buildSegmentByAlgorithm();
+	public abstract void buildGeometryObjectByAlgorithm();
 
 	@Override
 	public void run() {
 		clearLogPanel();
-		buildSegmentByAlgorithm();
+		buildGeometryObjectByAlgorithm();
 	}
 
 	public void logInfo(String pLogInfo){

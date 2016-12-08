@@ -1,6 +1,7 @@
 package kmv.editor.graphics.drawing.controler;
 
 import java.awt.Color;
+import kmv.editor.graphics.drawing.model.Segment;
 import kmv.editor.graphics.drawing.view.CoordinatePlane;
 import kmv.editor.graphics.view.WorkingAreaPanel;
 
@@ -10,16 +11,17 @@ public class BYAlgorithmController extends AlgorithmController {
     }
 
     @Override
-    public void buildSegmentByAlgorithm() {
+    public void buildGeometryObjectByAlgorithm() {
+        Segment segment = (Segment) mGeometryObject;
         CoordinatePlane coordinatePlane = mWorkingAreaPanel.getCoordinatePlane();
         coordinatePlane.clearCoordinatePlane();
         int pause = mCheckoutMod?1000:0;
 
         double buffer, x, x1, y1, x2, y2, dx, dy, gradient, xend, yend, xgap, xpxl1, ypxl1, xpxl2, ypxl2, intery;
-        x1 = mSegment.getStartX();
-        y1 = mSegment.getStartY();
-        x2 = mSegment.getFinishX();
-        y2 = mSegment.getFinishY();
+        x1 = segment.getStartX();
+        y1 = segment.getStartY();
+        x2 = segment.getFinishX();
+        y2 = segment.getFinishY();
         if (x1 > x2){
             buffer = x1; x1 = x2; x2 = buffer;
             buffer = y1; y1 = y2; y2 = buffer;
@@ -46,6 +48,11 @@ public class BYAlgorithmController extends AlgorithmController {
 
         x = xpxl1 + 1;
         while (x < (xpxl2)){
+            try {
+                Thread.sleep(pause);
+            } catch (InterruptedException pE) {
+                pE.printStackTrace();
+            }
             coordinatePlane.drawPlot((int)x, (int)ipart(intery), new Color(0, 0, 0, (int)(255*(1 - fpart(intery)))));
             coordinatePlane.drawPlot((int)x, (int)ipart(intery), new Color(0, 0, 0, (int)(255*(fpart(intery)))));
             intery = intery + gradient;
