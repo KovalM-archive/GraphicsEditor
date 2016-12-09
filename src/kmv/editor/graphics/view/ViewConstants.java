@@ -11,7 +11,8 @@ public interface ViewConstants {
     String MENU_SEGMENT_BY = "By-Algorithm";
     String MENU_CIRCLE = "Circle";
     String MENU_ELLIPSE = "Ellipse";
-    String MENU_HYPERBOLE = "hyperbole";
-    String MENU_PARABOLA = "parabola";
+    String MENU_HYPERBOLE = "Hyperbole";
+    String MENU_PARABOLA = "Parabola";
+    String MENU_CURVES_HERMITE = "Curves Hermite";
 
 }

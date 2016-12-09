@@ -42,10 +42,12 @@ public class MainWindow implements ViewConstants {
 		JMenuItem ddaAlgoritmItem = new JMenuItem(MENU_SEGMENT_DDA, KeyEvent.VK_R);
 		JMenuItem brenzenhemAlgoritmItem = new JMenuItem(MENU_SEGMENT_BRENZENHEM, KeyEvent.VK_A);
 		JMenuItem byAlgoritmItem = new JMenuItem(MENU_SEGMENT_BY, KeyEvent.VK_D);
+		JMenuItem curvesHirmiteItem = new JMenuItem(MENU_CURVES_HERMITE, KeyEvent.VK_H);
 
 		segmentsMenu.add(ddaAlgoritmItem);
 		segmentsMenu.add(brenzenhemAlgoritmItem);
 		segmentsMenu.add(byAlgoritmItem);
+		segmentsMenu.add(curvesHirmiteItem);
 		mainMenuBar.add(segmentsMenu);
 
 		ddaAlgoritmItem.addActionListener(new SegmentListener(
@@ -59,6 +61,10 @@ public class MainWindow implements ViewConstants {
 		brenzenhemAlgoritmItem.addActionListener(new SegmentListener(
 				mainFrame,
 				new BrezenhemAlgorithmController(workingAreaPanel))
+		);
+		curvesHirmiteItem.addActionListener(new CurvesHermiteBuildingListener(
+				mainFrame,
+				new HermitAlgorithmController(workingAreaPanel))
 		);
 
 		JMenu secondOrderLinesMenu = new JMenu(MENU_TWO_ORDER_LINES);
@@ -93,6 +99,8 @@ public class MainWindow implements ViewConstants {
 				mainFrame,
 				new HyperbolaAlgorithController(workingAreaPanel))
 		);
+
+
 
 		mainFrame.setVisible(true);
 	}
