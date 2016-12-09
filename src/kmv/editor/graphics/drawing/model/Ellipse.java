@@ -4,40 +4,40 @@ package kmv.editor.graphics.drawing.model;
  * @author Mikhail Kovalev
  */
 public class Ellipse implements GeometryObject{
-    private double circleX;
-    private double circleY;
-    private double circleA;
-    private double circleB;
+    private double eclipseX;
+    private double eclipseY;
+    private double eclipseA;
+    private double eclipseB;
 
-    public double getCircleX() {
-        return circleX;
+    public double getEclipseX() {
+        return eclipseX;
     }
 
-    public void setCircleX(double pCircleX) {
-        circleX = pCircleX;
+    public void setEclipseX(double pCircleX) {
+        eclipseX = pCircleX;
     }
 
-    public double getCircleY() {
-        return circleY;
+    public double getEclipseY() {
+        return eclipseY;
     }
 
-    public void setCircleY(double pCircleY) {
-        circleY = pCircleY;
+    public void setEclipseY(double pCircleY) {
+        eclipseY = pCircleY;
     }
 
-    public double getCircleA() {
-        return circleA;
+    public double getEclipseA() {
+        return eclipseA;
     }
 
-    public void setCircleA(double pCircleA) {
-        circleA = pCircleA;
+    public void setEclipseA(double pCircleA) {
+        eclipseA = pCircleA;
     }
 
-    public double getCircleB() {
-        return circleB;
+    public double getEclipseB() {
+        return eclipseB;
     }
 
-    public void setCircleB(double pCircleB) {
-        circleB = pCircleB;
+    public void setEclipseB(double pCircleB) {
+        eclipseB = pCircleB;
     }
 }

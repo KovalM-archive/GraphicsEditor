@@ -1,26 +1,14 @@
 package kmv.editor.graphics.view;
 
-import java.awt.BorderLayout;
-import javax.swing.JFrame;
-import javax.swing.JMenu;
-import javax.swing.JMenuBar;
-import javax.swing.JMenuItem;
-import javax.swing.KeyStroke;
-import javax.swing.UIManager;
-import javax.swing.UnsupportedLookAndFeelException;
+import kmv.editor.graphics.drawing.controler.*;
+import kmv.editor.graphics.menu.ExitMenuListener;
+import kmv.editor.graphics.menu.geometry.*;
+
+import javax.swing.*;
 import javax.swing.plaf.nimbus.NimbusLookAndFeel;
+import java.awt.*;
 import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
-
-import kmv.editor.graphics.drawing.controler.BYAlgorithmController;
-import kmv.editor.graphics.drawing.controler.BrezenhemAlgorithmController;
-import kmv.editor.graphics.drawing.controler.CircleAlgorithmController;
-import kmv.editor.graphics.drawing.controler.DDAAlgorithmController;
-import kmv.editor.graphics.drawing.controler.EllipseAlgorithmController;
-import kmv.editor.graphics.menu.ExitMenuListener;
-import kmv.editor.graphics.menu.geometry.CircleBuildingListener;
-import kmv.editor.graphics.menu.geometry.EllipseBuildingListener;
-import kmv.editor.graphics.menu.geometry.SegmentListener;
 
 public class MainWindow implements ViewConstants {
 	public MainWindow() {
@@ -78,12 +66,12 @@ public class MainWindow implements ViewConstants {
 		JMenuItem circleBuildingItem = new JMenuItem(MENU_CIRCLE);
 		JMenuItem ellipseBuildingtem = new JMenuItem(MENU_ELLIPSE);
 		JMenuItem hyperboleBuildingtem = new JMenuItem(MENU_HYPERBOLE);
-		JMenuItem parabolaBuildingtem = new JMenuItem(MENU_PARABOLA);
+		JMenuItem parabolaBuildingItem = new JMenuItem(MENU_PARABOLA);
 
 		secondOrderLinesMenu.add(circleBuildingItem);
 		secondOrderLinesMenu.add(ellipseBuildingtem);
 		secondOrderLinesMenu.add(hyperboleBuildingtem);
-		secondOrderLinesMenu.add(parabolaBuildingtem);
+		secondOrderLinesMenu.add(parabolaBuildingItem);
 		mainMenuBar.add(secondOrderLinesMenu);
 
 		circleBuildingItem.addActionListener(new CircleBuildingListener(
@@ -94,6 +82,16 @@ public class MainWindow implements ViewConstants {
 		ellipseBuildingtem.addActionListener(new EllipseBuildingListener(
 				mainFrame,
 				new EllipseAlgorithmController(workingAreaPanel))
+		);
+
+		parabolaBuildingItem.addActionListener(new ParabolaBuildingListener(
+				mainFrame,
+				new ParabolaAlgorithController(workingAreaPanel))
+		);
+
+		hyperboleBuildingtem.addActionListener(new HyperbolaBuildingListener(
+				mainFrame,
+				new HyperbolaAlgorithController(workingAreaPanel))
 		);
 
 		mainFrame.setVisible(true);

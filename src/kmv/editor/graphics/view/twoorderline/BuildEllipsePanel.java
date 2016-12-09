@@ -1,17 +1,10 @@
 package kmv.editor.graphics.view.twoorderline;
 
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-import java.awt.Insets;
-import javax.swing.JButton;
-import javax.swing.JCheckBox;
-import javax.swing.JDialog;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
 import kmv.editor.graphics.drawing.controler.AlgorithmController;
-import kmv.editor.graphics.drawing.model.Circle;
 import kmv.editor.graphics.drawing.model.Ellipse;
+
+import javax.swing.*;
+import java.awt.*;
 
 /**
  * @author Mikhail Kovalev
@@ -36,10 +29,10 @@ public class BuildEllipsePanel extends JPanel {
 		enterButton.addActionListener(e -> {
             pJDialog.setVisible(false);
 			Ellipse ellipse = new Ellipse();
-			ellipse.setCircleX(Double.valueOf(enterX1Input.getText()));
-			ellipse.setCircleY(Double.valueOf(enterY1Input.getText()));
-			ellipse.setCircleA(Double.valueOf(enterAInput.getText()));
-			ellipse.setCircleB(Double.valueOf(enterBInput.getText()));
+			ellipse.setEclipseX(Double.valueOf(enterX1Input.getText()));
+			ellipse.setEclipseY(Double.valueOf(enterY1Input.getText()));
+			ellipse.setEclipseA(Double.valueOf(enterAInput.getText()));
+			ellipse.setEclipseB(Double.valueOf(enterBInput.getText()));
             pAlgorithmController.startBuildSegment(ellipse, enterCheckoutModInput.isSelected());
 		});
 

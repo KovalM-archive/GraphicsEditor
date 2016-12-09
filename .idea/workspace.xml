@@ -2,34 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1d0628e-a561-47f2-a47d-381abc051a8b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/CircleAlgorithmController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/EllipseAlgorithmController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/kmv/editor/graphics/drawing/model/Circle.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/kmv/editor/graphics/drawing/model/Ellipse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/kmv/editor/graphics/drawing/model/GeometryObject.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/kmv/editor/graphics/menu/geometry/CircleBuildingListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/kmv/editor/graphics/menu/geometry/EllipseBuildingListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/kmv/editor/graphics/view/twoorderline/BuildCirclePanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/kmv/editor/graphics/view/twoorderline/BuildEllipsePanel.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GraphicsEditor/kmv/editor/graphics/menu/segement/CommonSegmentListener.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/kmv/editor/graphics/menu/segement/CommonSegmentListener.java" afterPath="$PROJECT_DIR$/src/kmv/editor/graphics/menu/geometry/SegmentListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GraphicsEditor/kmv/editor/graphics/drawing/controler/AlgorithmController.class" afterPath="$PROJECT_DIR$/out/production/GraphicsEditor/kmv/editor/graphics/drawing/controler/AlgorithmController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GraphicsEditor/kmv/editor/graphics/drawing/controler/BYAlgorithmController.class" afterPath="$PROJECT_DIR$/out/production/GraphicsEditor/kmv/editor/graphics/drawing/controler/BYAlgorithmController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GraphicsEditor/kmv/editor/graphics/drawing/controler/BrezenhemAlgorithmController.class" afterPath="$PROJECT_DIR$/out/production/GraphicsEditor/kmv/editor/graphics/drawing/controler/BrezenhemAlgorithmController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GraphicsEditor/kmv/editor/graphics/drawing/controler/DDAAlgorithmController.class" afterPath="$PROJECT_DIR$/out/production/GraphicsEditor/kmv/editor/graphics/drawing/controler/DDAAlgorithmController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GraphicsEditor/kmv/editor/graphics/drawing/model/Segment.class" afterPath="$PROJECT_DIR$/out/production/GraphicsEditor/kmv/editor/graphics/drawing/model/Segment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GraphicsEditor/kmv/editor/graphics/view/BuildSegmentPanel.class" afterPath="$PROJECT_DIR$/out/production/GraphicsEditor/kmv/editor/graphics/view/BuildSegmentPanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GraphicsEditor/kmv/editor/graphics/view/MainWindow.class" afterPath="$PROJECT_DIR$/out/production/GraphicsEditor/kmv/editor/graphics/view/MainWindow.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GraphicsEditor/kmv/editor/graphics/view/ViewConstants.class" afterPath="$PROJECT_DIR$/out/production/GraphicsEditor/kmv/editor/graphics/view/ViewConstants.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/AlgorithmController.java" afterPath="$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/AlgorithmController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/BYAlgorithmController.java" afterPath="$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/BYAlgorithmController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/BrezenhemAlgorithmController.java" afterPath="$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/BrezenhemAlgorithmController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/DDAAlgorithmController.java" afterPath="$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/DDAAlgorithmController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kmv/editor/graphics/drawing/model/Segment.java" afterPath="$PROJECT_DIR$/src/kmv/editor/graphics/drawing/model/Segment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kmv/editor/graphics/drawing/view/CoordinatePlane.java" afterPath="$PROJECT_DIR$/src/kmv/editor/graphics/drawing/view/CoordinatePlane.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/HyperbolaAlgorithController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/ParabolaAlgorithController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/kmv/editor/graphics/drawing/model/Hyperbola.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/kmv/editor/graphics/drawing/model/Parabola.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/kmv/editor/graphics/menu/geometry/HyperbolaBuildingListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/kmv/editor/graphics/menu/geometry/ParabolaBuildingListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/kmv/editor/graphics/view/twoorderline/BuildHyperbolaPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/kmv/editor/graphics/view/twoorderline/BuildParabolaPanel.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GraphicsEditor.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GraphicsEditor/kmv/editor/graphics/Runner.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GraphicsEditor/kmv/editor/graphics/drawing/controler/AlgorithmController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GraphicsEditor/kmv/editor/graphics/drawing/controler/BYAlgorithmController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GraphicsEditor/kmv/editor/graphics/drawing/controler/BrezenhemAlgorithmController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GraphicsEditor/kmv/editor/graphics/drawing/controler/CircleAlgorithmController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GraphicsEditor/kmv/editor/graphics/drawing/controler/DDAAlgorithmController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GraphicsEditor/kmv/editor/graphics/drawing/controler/EllipseAlgorithmController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GraphicsEditor/kmv/editor/graphics/drawing/model/Circle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GraphicsEditor/kmv/editor/graphics/drawing/model/Ellipse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GraphicsEditor/kmv/editor/graphics/drawing/model/GeometryObject.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GraphicsEditor/kmv/editor/graphics/drawing/model/Segment.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GraphicsEditor/kmv/editor/graphics/drawing/view/CoordinatePlane.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GraphicsEditor/kmv/editor/graphics/drawing/view/CoordinatePlaneConstants.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GraphicsEditor/kmv/editor/graphics/menu/ExitMenuListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GraphicsEditor/kmv/editor/graphics/menu/geometry/CircleBuildingListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GraphicsEditor/kmv/editor/graphics/menu/geometry/EllipseBuildingListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GraphicsEditor/kmv/editor/graphics/menu/geometry/SegmentListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GraphicsEditor/kmv/editor/graphics/view/BuildSegmentPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GraphicsEditor/kmv/editor/graphics/view/MainWindow.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GraphicsEditor/kmv/editor/graphics/view/ViewConstants.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GraphicsEditor/kmv/editor/graphics/view/WorkingAreaPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GraphicsEditor/kmv/editor/graphics/view/twoorderline/BuildCirclePanel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GraphicsEditor/kmv/editor/graphics/view/twoorderline/BuildEllipsePanel.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/EllipseAlgorithmController.java" afterPath="$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/EllipseAlgorithmController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kmv/editor/graphics/drawing/model/Ellipse.java" afterPath="$PROJECT_DIR$/src/kmv/editor/graphics/drawing/model/Ellipse.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kmv/editor/graphics/view/MainWindow.java" afterPath="$PROJECT_DIR$/src/kmv/editor/graphics/view/MainWindow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kmv/editor/graphics/view/ViewConstants.java" afterPath="$PROJECT_DIR$/src/kmv/editor/graphics/view/ViewConstants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kmv/editor/graphics/view/twoorderline/BuildEllipsePanel.java" afterPath="$PROJECT_DIR$/src/kmv/editor/graphics/view/twoorderline/BuildEllipsePanel.java" />
     </list>
     <ignored path="GraphicsEditor.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,9 +59,21 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/GraphicsEditor$Runner.coverage" NAME="Runner Coverage Results" MODIFIED="1481197087958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>kmv.editor.graphics.*</FILTER>
+    </SUITE>
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -52,25 +81,113 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DDAAlgorithmController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/DDAAlgorithmController.java">
+      <file leaf-file-name="EllipseAlgorithmController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/EllipseAlgorithmController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="230">
+              <caret line="95" column="37" lean-forward="false" selection-start-line="95" selection-start-column="37" selection-end-line="95" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AlgorithmController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/AlgorithmController.java">
+      <file leaf-file-name="CoordinatePlane.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/view/CoordinatePlane.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+            <state relative-caret-position="-459">
+              <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BuildEllipsePanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/view/twoorderline/BuildEllipsePanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="383">
+              <caret line="28" column="44" lean-forward="true" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BuildHyperbolaPanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/view/twoorderline/BuildHyperbolaPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-373">
+              <caret line="30" column="51" lean-forward="false" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#917#918#0" expanded="true" />
-                <element signature="e#977#978#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ParabolaBuildingListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/menu/geometry/ParabolaBuildingListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="24" column="88" lean-forward="true" selection-start-line="24" selection-start-column="88" selection-end-line="24" selection-end-column="88" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HyperbolaBuildingListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/menu/geometry/HyperbolaBuildingListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BuildParabolaPanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/view/twoorderline/BuildParabolaPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="409">
+              <caret line="29" column="24" lean-forward="true" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ParabolaAlgorithController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/ParabolaAlgorithController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="42" column="31" lean-forward="false" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HyperbolaAlgorithController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/HyperbolaAlgorithController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -85,6 +202,19 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>limit</find>
+      <find>xc</find>
+      <find>enterCheckoutModInput</find>
+      <find>EllipseBuildingListener</find>
+      <find>BuildEllipsePanel</find>
+      <find>enterAInput</find>
+      <find>16</find>
+      <find>20</find>
+      <find>enterCheckoutModText</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -128,62 +258,58 @@
         <option value="$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/BYAlgorithmController.java" />
         <option value="$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/AlgorithmController.java" />
         <option value="$PROJECT_DIR$/src/kmv/editor/graphics/view/ViewConstants.java" />
-        <option value="$PROJECT_DIR$/src/kmv/editor/graphics/drawing/model/Ellipse.java" />
         <option value="$PROJECT_DIR$/src/kmv/editor/graphics/view/twoorderline/EllipseCirclePanel.java" />
         <option value="$PROJECT_DIR$/src/kmv/editor/graphics/menu/geometry/EllipseBuildingListener.java" />
-        <option value="$PROJECT_DIR$/src/kmv/editor/graphics/view/MainWindow.java" />
-        <option value="$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/EllipseAlgorithmController.java" />
-        <option value="$PROJECT_DIR$/src/kmv/editor/graphics/drawing/view/CoordinatePlane.java" />
         <option value="$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/CircleAlgorithmController.java" />
+        <option value="$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/EllipseAlgorithmController.java" />
+        <option value="$PROJECT_DIR$/src/kmv/editor/graphics/drawing/model/Ellipse.java" />
+        <option value="$PROJECT_DIR$/src/kmv/editor/graphics/drawing/model/Parabola.java" />
+        <option value="$PROJECT_DIR$/src/kmv/editor/graphics/view/twoorderline/BuildEllipsePanel.java" />
+        <option value="$PROJECT_DIR$/src/kmv/editor/graphics/drawing/model/Hyperbola.java" />
+        <option value="$PROJECT_DIR$/src/kmv/editor/graphics/menu/geometry/HyperbolaBuildingListener.java" />
+        <option value="$PROJECT_DIR$/src/kmv/editor/graphics/view/MainWindow.java" />
+        <option value="$PROJECT_DIR$/src/kmv/editor/graphics/view/twoorderline/BuildParabolaPanel.java" />
+        <option value="$PROJECT_DIR$/src/kmv/editor/graphics/view/twoorderline/BuildHyperbolaPanel.java" />
+        <option value="$PROJECT_DIR$/src/kmv/editor/graphics/menu/geometry/ParabolaBuildingListener.java" />
+        <option value="$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/HyperbolaAlgorithController.java" />
+        <option value="$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/ParabolaAlgorithController.java" />
+        <option value="$PROJECT_DIR$/src/kmv/editor/graphics/drawing/view/CoordinatePlane.java" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" />
-  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
-    <option name="y" value="24" />
-    <option name="width" value="1301" />
-    <option name="height" value="744" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
-      <showMembers />
+      <showMembers ProjectPane="false" />
       <showModules />
       <showLibraryContents />
       <hideEmptyPackages />
       <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
+      <autoscrollToSource ProjectPane="true" />
+      <autoscrollFromSource ProjectPane="true" />
       <sortByType />
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GraphicsEditor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="GraphicsEditor" />
@@ -389,17 +515,18 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="D:/lineeditor" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="js.eslint.eslintPackage" value="" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -408,6 +535,9 @@
       <recent name="kmv.editor.graphics.menu" />
       <recent name="kmv.editor.graphics.view" />
       <recent name="kmv.editor.graphics" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Study\labs\GraphicsEditor" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Runner">
@@ -435,9 +565,10 @@
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
       <method />
     </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
@@ -447,11 +578,20 @@
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
       <option name="PREFERRED_AVD" value="" />
       <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
       <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <method />
@@ -470,8 +610,17 @@
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
       <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -554,6 +703,9 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
       <method />
     </configuration>
     <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
@@ -645,6 +797,7 @@
       <setting name="cmdLine" value="run-app" />
       <setting name="passParentEnv" value="true" />
       <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
       <setting name="depsClasspath" value="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
@@ -661,27 +814,6 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -709,6 +841,12 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
       <envs />
       <method />
     </configuration>
@@ -782,34 +920,6 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -840,6 +950,25 @@
         <item index="0" class="java.lang.String" itemvalue="Application.Runner" />
       </list>
     </recent_temporary>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -855,41 +984,58 @@
       <workItem from="1478803310885" duration="22089000" />
       <workItem from="1479245724199" duration="1857000" />
       <workItem from="1481096067834" duration="15846000" />
+      <workItem from="1481184751481" duration="7242000" />
+      <workItem from="1481195409712" duration="6774000" />
+      <workItem from="1481235297097" duration="8709000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47142000" />
+    <option name="totallyTimeSpent" value="69867000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935917" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839838" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.104321904" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32966322" sideWeight="0.4922179" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30820996" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27594158" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28470436" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32966322" sideWeight="0.4922179" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.4922179" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5365127" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5356662" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935917" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20207255" sideWeight="0.5077821" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839838" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -919,6 +1065,9 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -938,73 +1087,31 @@
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/CircleAlgorithmController.java</url>
-          <line>38</line>
+          <url>file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/ParabolaAlgorithController.java</url>
+          <line>42</line>
           <properties />
-          <option name="timeStamp" value="8" />
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="9" />
+      <option name="time" value="14" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="insertInfo.length()" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/BrezenhemAlgorithmController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="56" column="50" selection-start-line="56" selection-start-column="50" selection-end-line="56" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/view/CoordinatePlaneConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/view/CoordinatePlane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="846">
-          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/BYAlgorithmController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/view/MainWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="68" column="37" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/AlgorithmController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
-          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+          <caret line="25" column="30" lean-forward="false" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1012,28 +1119,22 @@
     <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/menu/geometry/SegmentListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
-          <caret line="31" column="75" selection-start-line="31" selection-start-column="75" selection-end-line="31" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="31" column="75" lean-forward="false" selection-start-line="31" selection-start-column="75" selection-end-line="31" selection-end-column="75" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/DDAAlgorithmController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
-          <caret line="38" column="11" selection-start-line="38" selection-start-column="11" selection-end-line="42" selection-end-column="13" />
-          <folding>
-            <element signature="e#401#402#0" expanded="false" />
-            <element signature="e#441#442#0" expanded="false" />
-          </folding>
+          <caret line="38" column="11" lean-forward="false" selection-start-line="38" selection-start-column="11" selection-end-line="42" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/BrezenhemAlgorithmController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1008">
-          <caret line="56" column="50" selection-start-line="56" selection-start-column="50" selection-end-line="56" selection-end-column="50" />
+          <caret line="56" column="50" lean-forward="false" selection-start-line="56" selection-start-column="50" selection-end-line="56" selection-end-column="50" />
           <folding />
         </state>
       </provider>
@@ -1041,7 +1142,7 @@
     <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/view/CoordinatePlaneConstants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+          <caret line="9" column="33" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
           <folding />
         </state>
       </provider>
@@ -1049,19 +1150,17 @@
     <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/view/CoordinatePlane.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2034">
-          <caret line="121" column="83" selection-start-line="121" selection-start-column="83" selection-end-line="121" selection-end-column="83" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <caret line="121" column="83" lean-forward="false" selection-start-line="121" selection-start-column="83" selection-end-line="121" selection-end-column="83" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/BYAlgorithmController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1069,48 +1168,39 @@
     <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/DDAAlgorithmController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
-          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="50" selection-end-column="62" />
-          <folding>
-            <element signature="e#401#402#0" expanded="false" />
-            <element signature="e#441#442#0" expanded="false" />
-          </folding>
+          <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="50" selection-end-column="62" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/view/MainWindow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/view/BuildSegmentPanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/menu/geometry/SegmentListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
-          <caret line="31" column="75" selection-start-line="31" selection-start-column="75" selection-end-line="31" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="31" column="75" lean-forward="false" selection-start-line="31" selection-start-column="75" selection-end-line="31" selection-end-column="75" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/BYAlgorithmController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <caret line="7" column="3" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1118,26 +1208,24 @@
     <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/view/CoordinatePlane.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <caret line="7" column="43" lean-forward="false" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/model/Segment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/AlgorithmController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="15" column="61" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="83" />
+          <caret line="15" column="61" lean-forward="false" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="83" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1145,25 +1233,22 @@
     <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/DDAAlgorithmController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="7" selection-end-column="3" />
-          <folding>
-            <element signature="e#401#402#0" expanded="false" />
-            <element signature="e#441#442#0" expanded="false" />
-          </folding>
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="7" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/view/ViewConstants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="11" column="47" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="47" />
+          <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/BrezenhemAlgorithmController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <caret line="7" column="3" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -1171,7 +1256,7 @@
     <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
-          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+          <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="false" />
             <element signature="e#176#177#0" expanded="false" />
@@ -1183,14 +1268,14 @@
     <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/menu/ExitMenuListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/view/WorkingAreaPanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="388">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="false" />
             <element signature="e#1011#1012#0" expanded="false" />
@@ -1200,18 +1285,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Math.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="715" column="23" selection-start-line="715" selection-start-column="23" selection-end-line="715" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Math.java" />
     <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/view/CoordinatePlaneConstants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+          <caret line="8" column="34" lean-forward="false" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -1219,41 +1297,21 @@
     <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/model/Segment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/model/GeometryObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-          <folding />
+          <caret line="5" column="46" lean-forward="false" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/view/BuildSegmentPanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/menu/geometry/SegmentListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="69" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/BrezenhemAlgorithmController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
-          <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="43" selection-end-column="13" />
+          <caret line="39" column="12" lean-forward="false" selection-start-line="39" selection-start-column="12" selection-end-line="43" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1261,140 +1319,238 @@
     <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/view/ViewConstants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/view/twoorderline/BuildCirclePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="32" column="48" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/model/Circle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="4" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/model/Ellipse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
-          <folding>
-            <element signature="e#271#272#0" expanded="true" />
-            <element signature="e#301#302#0" expanded="true" />
-            <element signature="e#348#349#0" expanded="true" />
-            <element signature="e#382#383#0" expanded="true" />
-            <element signature="e#416#417#0" expanded="true" />
-            <element signature="e#446#447#0" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-            <element signature="e#527#528#0" expanded="true" />
-            <element signature="e#561#562#0" expanded="true" />
-            <element signature="e#591#592#0" expanded="true" />
-            <element signature="e#638#639#0" expanded="true" />
-            <element signature="e#672#673#0" expanded="true" />
-            <element signature="e#706#707#0" expanded="true" />
-            <element signature="e#736#737#0" expanded="true" />
-            <element signature="e#783#784#0" expanded="true" />
-            <element signature="e#817#818#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/menu/geometry/CircleBuildingListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="32" column="52" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/view/twoorderline/BuildEllipsePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="41" column="70" selection-start-line="41" selection-start-column="70" selection-end-line="41" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/menu/geometry/EllipseBuildingListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/view/MainWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="95" column="47" selection-start-line="95" selection-start-column="47" selection-end-line="95" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/EllipseAlgorithmController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="7" column="50" lean-forward="false" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/BYAlgorithmController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <caret line="22" column="22" lean-forward="false" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/AlgorithmController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#917#918#0" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/view/CoordinatePlane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="78" column="16" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/CircleAlgorithmController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="82" column="30" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/DDAAlgorithmController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="476">
+          <caret line="33" column="12" lean-forward="false" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/model/Circle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/AlgorithmController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/model/GeometryObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/menu/geometry/CircleBuildingListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="22" column="44" lean-forward="false" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/menu/geometry/EllipseBuildingListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/CircleAlgorithmController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="54" column="58" lean-forward="false" selection-start-line="54" selection-start-column="58" selection-end-line="54" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/model/Parabola.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="34" column="0" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <element signature="e#208#209#0" expanded="false" />
+            <element signature="e#232#233#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/model/Ellipse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding>
+            <element signature="e#276#277#0" expanded="false" />
+            <element signature="e#307#308#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/model/Hyperbola.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding>
+            <element signature="e#252#253#0" expanded="true" />
+            <element signature="e#283#284#0" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#334#335#0" expanded="true" />
+            <element signature="e#358#359#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#415#416#0" expanded="true" />
+            <element signature="e#440#441#0" expanded="true" />
+            <element signature="e#464#465#0" expanded="true" />
+            <element signature="e#495#496#0" expanded="true" />
+            <element signature="e#521#522#0" expanded="true" />
+            <element signature="e#546#547#0" expanded="true" />
+            <element signature="e#570#571#0" expanded="true" />
+            <element signature="e#601#602#0" expanded="true" />
+            <element signature="e#627#628#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/view/twoorderline/BuildCirclePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="32" column="48" lean-forward="false" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/view/MainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="91" column="77" lean-forward="false" selection-start-line="91" selection-start-column="77" selection-end-line="91" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/menu/geometry/SegmentListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/menu/geometry/HyperbolaBuildingListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/view/twoorderline/BuildEllipsePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="28" column="44" lean-forward="true" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/view/twoorderline/BuildHyperbolaPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-373">
+          <caret line="30" column="51" lean-forward="false" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/view/twoorderline/BuildParabolaPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="29" column="24" lean-forward="true" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/menu/geometry/ParabolaBuildingListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="24" column="88" lean-forward="true" selection-start-line="24" selection-start-column="88" selection-end-line="24" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/HyperbolaAlgorithController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/ParabolaAlgorithController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="42" column="31" lean-forward="false" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/view/CoordinatePlane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-459">
+          <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kmv/editor/graphics/drawing/controler/EllipseAlgorithmController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="95" column="37" lean-forward="false" selection-start-line="95" selection-start-column="37" selection-end-line="95" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
